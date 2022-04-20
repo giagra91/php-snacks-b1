@@ -70,7 +70,7 @@ $posts = [
                         ?>
                         <h5>
                             <?php echo $item["title"]; ?>
-                    </h5>
+                        </h5>
                         <p>
                             <?php echo $item["author"]; ?>
                         </p>
