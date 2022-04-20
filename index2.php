@@ -27,10 +27,9 @@
     <p> 
         <?php 
             $userInfos = $_GET;
-            var_dump($userInfos);
-            if ( (strlen($userInfos[`name`]) > 3) 
-                && (strpos($userInfos[`mail`], "@") && strpos($userInfos[`mail`], ".")) 
-                && (is_numeric($userInfos[`age`])) ){
+            if ( (strlen($userInfos["name"]) > 3) 
+                && (strpos($userInfos["mail"], "@") && strpos($userInfos["mail"], ".")) 
+                && (is_numeric($userInfos["age"])) ){
                 echo "Accesso riuscito";
             } else {
                 echo "Accesso negato";
