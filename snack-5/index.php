@@ -18,13 +18,13 @@
     <title>Quinto snack</title>
 </head>
 <body>
-    <ul> 
+    
         <?php for ($i = 0; $i < count($newArray) ; $i++) {?> 
-            <li> 
+            <p> 
                 <?php echo $newArray[$i] ?> 
-            </li>
+            </p>
         <?php }?>
-    </ul>
+    
 
 </body>
 </html>
