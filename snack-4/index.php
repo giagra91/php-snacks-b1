@@ -4,9 +4,9 @@
  */
 
     $newArray = [];
-    for ($i = 0 ; $i < 15 ; $i++){
-        $number = rand(1, 100);
-        if (!in_array($number, $newArray) || count($newArray) < 15){
+    while (count($newArray) < 15){
+        $number = rand(1, 15);
+        if (!in_array($number, $newArray)){
             $newArray[] = $number;
         }
     }
