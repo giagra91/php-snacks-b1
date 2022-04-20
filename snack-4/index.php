@@ -21,6 +21,10 @@
     <title>Quarto snack</title>
 </head>
 <body>
-    <?php var_dump($newArray) ?>
+    <ul> 
+        <?php for ($i = 0 ;$i < count($newArray) ; $i++) {?>
+            <li> <?php echo $newArray[$i] ?></li>
+        <?php }?>
+    </ul>
 </body>
 </html>
