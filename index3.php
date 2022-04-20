@@ -64,7 +64,7 @@ $posts = [
             <?php for ($x = 0 ; $x < count($postValues[$i]); $x++){ ?>
 
                 <p>
-                    <?php var_dump($postValues[$i][$x]); ?>
+                    <?php echo $postValues[$i][$x][`title`]; ?>
                 </p>
 
             <?php }?>
