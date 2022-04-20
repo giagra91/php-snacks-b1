@@ -60,7 +60,7 @@ $posts = [
             $postKeys = array_keys($posts);
 
             for ($i = 0 ; $i < count($postKeys) ; $i++ ){?>
-                <h5>Data post: <?php echo $postKeys[$i] ?></h5>
+                <h3>Data post: <?php echo $postKeys[$i] ?></h3>
                 <?php 
                 $key = $postKeys[$i];
                 $current = $posts[$key]; 
@@ -68,9 +68,9 @@ $posts = [
                     <?php for ($x = 0 ; $x < count($current); $x++){ ?>
                         <?php $item = $current[$x];
                         ?>
-                        <p>
+                        <h5>
                             <?php echo $item["title"]; ?>
-                        </p>
+                    </h5>
                         <p>
                             <?php echo $item["author"]; ?>
                         </p>
